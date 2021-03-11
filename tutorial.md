@@ -12,14 +12,14 @@
  * CSS
  * JS
  
- Сайт 
- > собирается из файлов репозитория непосредственно,
+Сайт 
+> собирается из файлов репозитория непосредственно,
+> 
+> преобразуется,
+>
+> публикуется.
  
- > преобразуется,
- 
- > публикуется.
- 
- [Официальные образцы на GitHub](https://github.com/collections/github-pages-examples)
+[Официальные образцы на GitHub](https://github.com/collections/github-pages-examples)
         
-        Список источников:
-        * Документация GitHub Pages, URL: https://docs.github.com/en/github/working-with-github-pages/about-github-pages"
+Список источников:
+* Документация GitHub Pages, URL: https://docs.github.com/en/github/working-with-github-pages/about-github-pages"
