@@ -2,17 +2,17 @@
 2. Создаем новый репозиторий
 3. Первоначальное имя репозитория зависит от типа сайта: 
 
-  a. проект (связан с конкретным GitHub-проектом) `https://username.github.io/project/`
+    a. проект (связан с конкретным GitHub-проектом) `https://username.github.io/project/`
   
-  b. пользователь (связан с аккаунтом) `https://username.github.io/`
+    b. пользователь (связан с аккаунтом) `https://username.github.io/`
   
-  c. организация (связан с аккаунтом) `https://organization.github.io/`
+    c. организация (связан с аккаунтом) `https://organization.github.io/`
  
  * HTML
  * CSS
  * JS
  
-Сайт 
+## Сайт 
 > собирается из файлов репозитория непосредственно,
 > 
 > преобразуется,
@@ -21,5 +21,5 @@
  
 [Официальные образцы на GitHub](https://github.com/collections/github-pages-examples)
         
-Список источников:
-* Документация GitHub Pages, URL: https://docs.github.com/en/github/working-with-github-pages/about-github-pages"
+## Список источников:
+* Документация GitHub Pages, URL: https://docs.github.com/en/github/working-with-github-pages/about-github-pages
