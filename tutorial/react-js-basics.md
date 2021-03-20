@@ -24,3 +24,15 @@
 
 ![Иллюстрация к проекту](https://sun9-74.userapi.com/impg/eKPoV5X2me9RFq7EJ9WgSrHGC_TRCs5p71z1jA/KecGXnjsvfQ.jpg?size=1626x972&quality=96&sign=ade29fb0a6dd6b74466d0fc1a1064b5c&type=album)
 ## Добавление кода в репозиторий
+* Клонирование репозитория
+
+`C:\Users\User>git clone git@github.com:username/repo.git`
+
+`C:\Users\User>cd repo`
+* Добавление файлов
+
+`C:\Users\User\repo>git add files`
+
+`C:\Users\User\repo>git commit -m "Add files"`
+
+`C:\Users\User\repo>git push`
