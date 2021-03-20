@@ -9,3 +9,6 @@
 `C:\>cd "\program files"`
 
 `C:\Program Files>cd nodejs`
+* Создать приложение 
+
+`C:\Program Files\nodejs>npx create-react-app my-app`
