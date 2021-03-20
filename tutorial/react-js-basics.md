@@ -6,4 +6,4 @@
 * Запустить *cmd.exe* от имени администратора 
 * Открыть папку Node.js 
 ```C:\>cd "\program files"
-`C:\Program Files>cd nodejs```
+C:\Program Files>cd nodejs```
