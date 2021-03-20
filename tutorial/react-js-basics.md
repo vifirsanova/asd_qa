@@ -7,4 +7,5 @@
 * Открыть папку Node.js 
 
 `C:\>cd "\program files"`
+
 `C:\Program Files>cd nodejs`
