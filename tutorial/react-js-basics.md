@@ -5,6 +5,6 @@
 **Запуск Node.js**
 * Запустить *cmd.exe* от имени администратора 
  
-`C:\>cd "\program files"
+`C:\>cd "\program files"`
 
-C:\Program Files>cd nodejs`
+`C:\Program Files>cd nodejs`
