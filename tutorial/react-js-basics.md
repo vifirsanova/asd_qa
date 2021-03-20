@@ -12,3 +12,6 @@
 * Создать приложение 
 
 `C:\Program Files\nodejs>npx create-react-app my-app`
+* Перейти в репозиторий проекта 
+
+`C:\Program Files\nodejs\my-app>`
