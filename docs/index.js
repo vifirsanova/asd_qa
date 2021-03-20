@@ -9,6 +9,6 @@ class HelloMessage extends React.Component {
 }
 
 ReactDOM.render(
-  <HelloMessage name="world" />,
+  <HelloMessage name="pug" />,
   document.getElementById('hello-example')
 );
