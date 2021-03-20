@@ -1,63 +1,48 @@
-class Square extends React.Component {
-  render() {
-    return (
-      <button className="square">
-        {/* TODO */}
-      </button>
-    );
-  }
+import React from 'react'
+import axios from 'axios'
+
+import './App.css'
+import SocialFollow from "./SocialFollow"
+
+class App extends React.Component {
+    state = { advice: '' }
+
+    componentDidMount() {        
+        this.fetchAdvice()
+    }
+
+    fetchAdvice = () => {
+        axios.get('https://api.adviceslip.com/advice')
+        .then((response) => {
+            const {advice} = response.data.slip ;
+            this.setState({ advice: advice});
+        })
+        .catch((error) => {
+            console.log(error); 
+        });
+    }
+
+    render() {
+        const { advice } = this.state ;
+        return (
+            <div>
+            <div className="app">
+            <h1>WELCOME TO GYAANI BABA</h1>
+            <h3>Your personal advisor to keep you motivated and calm amidst chaos</h3>
+            <div className="card">
+              <h2>{advice}</h2>
+              <button className="buton" onClick={this.fetchAdvice}>
+                <span><h4>Unlock today's Gyaan</h4></span>
+              </button>
+            </div>
+          </div>
+          <footer>
+          <SocialFollow />
+          </footer>
+          </div>
+
+        );
+    }
 }
 
-class Board extends React.Component {
-  renderSquare(i) {
-    return <Square />;
-  }
-
-  render() {
-    const status = 'Next player: X';
-
-    return (
-      <div>
-        <div className="status">{status}</div>
-        <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(3)}
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
-        </div>
-      </div>
-    );
-  }
-}
-
-class Game extends React.Component {
-  render() {
-    return (
-      <div className="game">
-        <div className="game-board">
-          <Board />
-        </div>
-        <div className="game-info">
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
-        </div>
-      </div>
-    );
-  }
-}
-
-// ========================================
-
-ReactDOM.render(
-  <Game />,
-  document.getElementById('root')
-);
+export default 
