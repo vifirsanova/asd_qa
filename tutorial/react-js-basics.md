@@ -3,6 +3,8 @@
 * Скачать [Node.js](https://nodejs.org/en/) 
 
 **Запуск Node.js**
-* Открыть *cmd.exe*
+* Запустить *cmd.exe* от имени администратора 
+ 
 `C:\>cd "\program files"
+
 C:\Program Files>cd nodejs`
