@@ -1,5 +1,5 @@
-## Начало работы с React JS *(Windows)*
-### Запуск тестового приложения
+# Начало работы с React JS *(Windows)*
+## Запуск тестового приложения
 **Подготовка**
 * Скачать [Node.js](https://nodejs.org/en/) 
 
@@ -23,4 +23,4 @@
 *Приложение запустится в окне браузера* 
 
 ![Иллюстрация к проекту](https://sun9-74.userapi.com/impg/eKPoV5X2me9RFq7EJ9WgSrHGC_TRCs5p71z1jA/KecGXnjsvfQ.jpg?size=1626x972&quality=96&sign=ade29fb0a6dd6b74466d0fc1a1064b5c&type=album)
-### Добавление кода в репозиторий
+## Добавление кода в репозиторий
