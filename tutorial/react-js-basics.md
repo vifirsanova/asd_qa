@@ -15,3 +15,6 @@
 * Перейти в репозиторий проекта 
 
 `C:\Program Files\nodejs>cd my-app`
+* Запустить тестовое приложение
+
+`C:\Program Files\nodejs\my-app>npm start`
