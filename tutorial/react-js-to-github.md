@@ -29,3 +29,24 @@
 ![](https://sun9-16.userapi.com/impg/wzhAYnjrl-z68_yCk77JsszMNAzRMf2jYusGcQ/gAfabc5pGMI.jpg?size=567x189&quality=96&sign=5c5f90aa6adb5b4df5f23ade0ab85b1b&type=album)
 
 ## Обновляем репозиторий
+
+`C:\Program Files\nodejs\my-app>git init`
+
+`C:\Program Files\nodejs\my-app>git remote add origin git@github.com:vifirsanova/asd_qa.git`
+
+`C:\Program Files\nodejs\my-app>npm run deploy`
+
+Команда создает новую ветку в репозитории
+
+![](https://sun9-62.userapi.com/impg/YL1O2JXeFCxo94mMtKkdvYXg8GRmOaXVQySlTQ/j1FzkX8f7oY.jpg?size=386x437&quality=96&sign=b67b018487adcc54d802181e69cbde73&type=album)
+
+
+## Обновляем настройки репозитория
+
+Выбираем в качестве источника новую ветку
+
+![](https://sun9-56.userapi.com/impg/yoG9se2Nyad43Ad1hLknll-Y5JrHB0YJhVQptQ/W5PeOS-rCJQ.jpg?size=601x205&quality=96&sign=4169c6146baee609f38de47c9c034e92&type=album)
+
+## Тестовое приложение опубликовано онлайн
+
+![](https://sun9-43.userapi.com/impg/WlcmWHPAMokg0UiEEZ4HDc0FEF5cZGS72-3TZg/JVW_vz-4Pic.jpg?size=1663x853&quality=96&sign=d9cc40bcac40a2f5bb3a07a956f447bf&type=album)
