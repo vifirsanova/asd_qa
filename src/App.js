@@ -7,15 +7,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Вопросно-ответная система ASD QA
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://ods.ai/projects/asd_qa"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Страница проекта на Open Data Science
         </a>
       </header>
     </div>
