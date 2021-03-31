@@ -15,20 +15,18 @@ function App() {
   const handleSubmit = event => {
 	  event.preventDefault();
 	  setSubmitting(true);
-	  
-	  setTimeout(() => {
-		  setSubmitting(false);
-	  }, 3000)
-	  
-	  alert('Приятно познакомиться!')
+    setTimeout(() => {
+      setSubmitting(false);
+    }, 50000);	  
 }
 
-const handleChange = event => {
-  setFormData({
-    name: event.target.name,
-    value: event.target.value,
-  });
-}
+  const handleChange = event => {
+   const isCheckbox = event.target.type === 'checkbox';
+   setFormData({
+     name: event.target.name,
+     value: isCheckbox ? event.target.checked : event.target.value,
+   })
+ }
   
   return (
     <div className="App">
@@ -45,23 +43,42 @@ const handleChange = event => {
         >
           Страница проекта на Open Data Science
         </a>
-		<p> Давайте познакомимся </p>
+		<p> <strong> Давайте познакомимся! </strong> </p>
 		{submitting &&
 		<div> 
-			<ul>
-				{Object.entries(formData).map(([name, value]) => (
-				<a key={name}>Приятно познакомиться, {value.toString()}</a>
-				))}
-			</ul>
+         <ul>
+           {Object.entries(formData).map(([name, value]) => (
+             <a key={name}>{name}{value.toString()}. </a>
+           ))}
+         </ul>
 		</div>
 		}
 		<form onSubmit={handleSubmit}>
 		<fieldset>
 			<label>
 				<p>Введите Ваше имя</p>
-				<input name="name" onChange={handleChange}/>
+				<input name="Приятно познакомиться, " onChange={handleChange}/>
 			</label>
 		</fieldset>
+        <fieldset>
+         <label>
+           <p>Выберите систему</p>
+           <select name="Вы выбрали систему " onChange={handleChange}>
+               <option value="">--Выберите из списка--</option>
+               <option value="System 1">System 1</option>
+               <option value="System 2">System 2</option>
+               <option value="System 3">System 3</option>
+           </select>
+         </label>
+         <label>
+           <p>Введите Ваш возраст</p>
+           <input type="number" name="Ваш возраст: " onChange={handleChange} step="1"/>
+         </label>
+         <label>
+           <p>Согласие на обработку данных</p>
+           <input type="checkbox" name="Согласие на обработку данных: " onChange={handleChange} />
+         </label>
+       </fieldset>
 		<button type="submit">Отправить</button>
 		</form>	
 			
