@@ -1,7 +1,13 @@
 import React, { useReducer, useState } from 'react';
+import Button from './components/Button.js';
+import SelectBox from './components/SelectBox';
+import TextBox from './components/TextBox';
+import './styles.scss';
+import { postGenerateTextEndpoint } from './utils';
 
 import logo from './logo.svg';
 import './App.css';
+
 
 const formReducer = (state, event) => {
   return {
@@ -27,6 +33,14 @@ function App() {
      value: isCheckbox ? event.target.checked : event.target.value,
    })
  }
+ 
+  const [text, setText] = useState("");
+  const [model, setModel] = useState('gpt2');
+  const [generatedText, postGenerateText] = postGenerateTextEndpoint();
+
+  const generateText = () => {
+    postGenerateText({ text, model, userId: 1 });
+  }
   
   return (
     <div className="App">
@@ -80,10 +94,28 @@ function App() {
          </label>
        </fieldset>
 		<button type="submit">Отправить</button>
-		</form>	
-			
+		</form>		
       </header>
+	  
+	<div className='app-container'>
+      <form noValidate autoComplete='off'>
+        <h1>Тестирование GPT-2</h1>
+        <SelectBox model={model} setModel={setModel} />
+        <TextBox text={text} setText={setText} />
+        <Button onClick={generateText} />
+      </form>
+
+      {generatedText.pending &&
+        <div className='result pending'>Пожалуйста, подождите...</div>}
+
+      {generatedText.complete &&
+        (generatedText.error ?
+          <div className='result error'>Ошибка</div> :
+          <div className='result valid'>
+            {generatedText.data.result}
+          </div>)}
     </div>
+    </div>  
   );
 }
 
